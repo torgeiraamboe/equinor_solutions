@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{pdfpages}
+\usepackage{tocloft}
+\usepackage{imakeidx}
+\usepackage{dsfont}
+\usepackage{titling}
+\usepackage{parskip}
+\usepackage{csquotes}
+\usepackage{amsmath, amssymb, amsthm}
+\setlength{\marginparwidth }{2.6cm}
+\setlength{\headheight}{14.5pt}
+\usepackage{todonotes, verbatim}
+\usepackage{faktor}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{adjustbox}
+\usepackage{tikz-cd}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{multicol}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+
+\graphicspath{{./images/}}
+\pgfplotsset{compat=1.15}
+
+\hypersetup{
+colorlinks=true,
+citecolor=[rgb]{0,0,0.8},
+linkcolor=[rgb]{0,0,0.8},
+}
+
+\geometry{
+    top=30mm, 
+    bottom=30mm, 
+    left=30mm, 
+    right=30mm
+}
+
+%\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+
+%\theoremstyle{thmstyletwo}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+\newtheorem{question}{Question}
+\newtheorem{acknowledgements}{Acknowledgements}
+
+%\theoremstyle{thmstylethree}
+\newtheorem{definition}{Definition}
+
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathcal{C}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}} 
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\A}{\ensuremath{A_{\infty}}}
+\newcommand{\ls}{\text{cat}_{LS}}
+\renewcommand{\ker}{\text{Ker}}
+\newcommand{\ima}{\text{Im}}
+\newcommand{\wH}{\widetilde{H}}
+\newcommand{\wC}{\widetilde{C}}
+\newcommand{\pir}{\pi^{\Q}}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\Apl}{\text{A}_{PL}}
+\DeclareMathOperator{\Tot}{Tot}
+
+\cfoot{\thepage}
+
+\tikzset{
+%->,  
+%>=stealth, 
+node distance=2.3cm, 
+every state/.style={thick, fill=gray!10},  
+auto,
+snake it/.style={decorate, decoration=snake}
+}
+\tikzstyle{every path}=[line width=0.8pt]
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+\title{Løsningsforslag til Equinor's promo-oppgaver}
+\author{Torgeir Aamb\o}
+\date{}
+
+\begin{document}
+\maketitle
+
+\input{losning_1.tex}
+\input{losning_2.tex}
+\input{losning_3.tex}
+
+
+\bibliographystyle{alpha}
+\bibliography{references}
+
+
+\end{document}
